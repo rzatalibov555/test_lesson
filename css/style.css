@@ -1,0 +1,150 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+    background: lightgrey;
+}
+
+nav{
+    width: 100%;
+    min-height: 70px;
+    background: grey;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    list-style-type: none;
+    float: left;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu{
+    min-width:200px;
+    min-height: inherit;
+    /* background: green; */
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo{
+    width: 130px;
+    min-height: 130px;
+    background: green;
+    float: left;
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    /* border: 10px solid red; */
+}
+
+.logo img{
+    width: 130px;
+    height: 130px;
+    float: left;
+    border-radius: 50%;
+}
+
+.center{
+    width: 150px;
+    min-height: inherit;
+    /* background: red; */
+    float: left;
+ 
+}
+
+
+/* /// r_container start /// */
+.r_container {
+    width: 100%;
+    min-height: 500px;
+    background: rgb(19, 193, 224);
+    float: left;
+    padding: 150px 50px 50px 50px;
+    box-sizing: border-box;
+}
+
+.r_card {
+    width: 200px;
+    min-height: 300px;
+    background: purple;
+    float: left;
+    position: relative;
+    margin: 20px;
+}
+
+.up, .down {
+    width: 100%;
+    height: 150px;
+    background: green;
+    float: left;
+}
+
+.up {
+    background-image: url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.down {
+    background: rgb(169, 228, 32);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.LogoUser_side {
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    float: left;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile {
+    width: 80px;
+    height: 80px;
+    background: purple;
+    float: left;
+    border-radius: 50%;
+    z-index: 3;
+    position: relative; /* Add position relative to create stacking context */
+}
+
+#menu_card {
+    width: 200px;
+    height: 40px;
+    background: red;
+    position: absolute;
+    right: -60px; /* Adjusted to match the hover effect */
+    top: 0; /* Align with the top of the card */
+    display: none; /* Initially hidden */
+}
+
+#profile:hover + #menu_card {
+    display: block; /* Show menu card on hover */
+    background: green; /* Change background color */
+}
+
+/* /// r_container end /// */
+
+
